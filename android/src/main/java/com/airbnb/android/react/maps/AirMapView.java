@@ -157,10 +157,10 @@ public class AirMapView extends MapView implements GoogleMap.InfoWindowAdapter,
                 // Return false to open the callout info window and center on the marker
                 // https://developers.google.com/android/reference/com/google/android/gms/maps/GoogleMap.OnMarkerClickListener
                 if (view.moveOnMarkerPress) {
-                  return false;
+                  return true;
                 } else {
                   marker.showInfoWindow();
-                  return true;
+                  return false;
                 }
             }
         });
